@@ -5,8 +5,7 @@
 using namespace std;
 char t[9]={'1','2','3','4','5','6','7','8','9'};
 int n;
-
-
+/*Not completed*/
 void display_board();
 void xo_read();
 bool checkwiner();
@@ -15,12 +14,12 @@ bool checkdraw();
 int main()
 {
 	bool b,c;
-	cout << "tic_tac_toe by engineer\n";
+	cout << "tic_tac_toe by engineer aboud\n";
 		display_board();
 	do{ 
 		xo_read();
 		ia_player();
-        display_board();
+        	display_board();
 		b=checkdraw();
 		c=checkwiner();
 	}while(b==false && c==false);
@@ -53,6 +52,7 @@ void ia_player() {
 	} while (ii==0);
 	t[n - 1] = 'o';
 }
+/*checkwinner function and checkdraw are not completed*/
 bool checkwiner(){
 	int i;
 	for (i=0;i<9;i+=3)
